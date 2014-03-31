@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/NumbersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/Number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" 
+                android:background="#00FF00"/>
+
+            <Button
+                android:id="@+id/Number2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2" 
+                android:background="#00FF00"/>
+
+            <Button
+                android:id="@+id/Number3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3" 
+                android:background="#00FF00"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/Number4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3" 
+                android:background="#00FF00"/>
+
+            <Button
+                android:id="@+id/Number5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9" 
+                android:background="#00FF00"/>
+
+            <Button
+                android:id="@+id/Number6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2" 
+                android:background="#00FF00"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/OperatorsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.58" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="20dp" >
+
+                <Button
+                    android:id="@+id/OperatorPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+" 
+                    android:background="#FF0000"/>
+
+                <Button
+                    android:id="@+id/OperatorMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-" 
+                    android:background="#FF0000"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your result:" />
+
+            <Button
+                android:id="@+id/attemptedSolutionResult"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="&apos;?&apos;" 
+                android:background="#0000FF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/instructionsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Target result" />
+
+            <Button
+                android:id="@+id/targetNum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="36" 
+                android:background="#0000FF"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="0.75" >
+
+        <LinearLayout
+            android:id="@+id/SolutionLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.05"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/sendSolution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Solution" 
+        android:background="#FFFF00"/>
+
+    <Button
+        android:id="@+id/startNewGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start A New Game" />
+
+    <Button
+        android:id="@+id/backToMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back To Main Menu" />
+
+</LinearLayout>
